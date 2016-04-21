@@ -1,0 +1,83 @@
+#Windows files
+Thumbs.db
+~*
+
+#OS X files
+.DS_Store
+._*
+
+#git tmp files
+*.orig
+*.BACKUP.*
+*.BASE.*
+*.LOCAL.*
+*.REMOTE.*
+
+#Visual Studio junk
+*.vsdoc
+*.obj
+*.exe
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+[Bb]in
+[Dd]ebug*/
+*.lib
+*.sbr
+obj/
+[Rr]elease*/
+_ReSharper*/
+[Tt]est[Rr]esult*
+*.Publish.xml
+*.sdf
+*.opensdf
+*.ipch
+*.vsp
+*.psess
+.vs/
+
+#MonoDevelop
+*.userprefs
+
+#Project specific files
+*.sublime-workspace
+*.sublime-project
+!Avenger.sublime-project
+.idea
+.idea/*
+*.swp
+*.swo
+
+#unit test reports:
+VBrickPlatform.Test.JSUnitTests/coverage
+
+#Grunt temporary files, bundle output
+VBrickPlatform.Web.Portal/dist/
+VBrickPlatform.Web.Shared/dist/
+VBrickPlatform.Web.Api.AuthorizationServer/dist/
+**/less/**/*.css
+node_modules/
+bower_components/
+*.chw
+
+#Flexera licence dump files
+FlexeraLicense/*
+!FlexeraLicense/license.bin
+
+#C++ output files (Linux)
+*.o
+
+#Packages
+packages/

@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="../../Content/semantic/packaged/css/semantic.min.css" rel="stylesheet" />
+       <link href="../../Content/Style/SelfRegistrationStyle.css" rel="stylesheet" />
+    <script src="../../Content/Scripts/jquery-1.10.2.min.js"></script>  
+</head>
+<body>
+	<div class="container" lang="en" ng-app="revAuthApp" ng-controller="RevOAuthController">
+		<form name="revoauth_form" novalidate ng-submit="revOAuthCode()">
+			<div class="main" lang="en" ng-app="revoauthApp">
+				<div class="ui top attached segment center aligned form-header">
+					<h2 class="ui header inverted">
+						REV OAuth2
+						<div class="sub header">REV OAuth2 Testing Page</div>
+					</h2>
+				</div>
+				<div class="ui positive message attached segment" ng-show="revOAuthComplete">
+					<div class="ui header center aligned">Success</div>
+					<div class="content">
+						<p>{{ConfirmationMessage}}</p>
+					</div>
+				</div>
+				<div class="ui negative message attached segment" ng-show="revOAuthFailure">
+					<div class="ui header center aligned">Error</div>
+					<div class="content">
+						<p>{{ErrorMessage}}</p>
+					</div>
+				</div>
+				<fieldset>
+					<div class="ui form segment">
+					
+						<div class="field">
+							<label for="RevUrl">Rev URL</label>
+							<input id="RevUrl" ng-disabled="IsCodeButtonHide" autofocus="autofocus" name="revurl" ng-minlength="5" ng-maxlength=20 required ng-model="revinfo.Revurl" placeholder="Rev URL" type="text" />
+
+						</div>						
+						
+						<div class="field">
+							<label for="ApiKey">API Key</label>
+							<input id="ApiKey" ng-disabled="IsCodeButtonHide" name="apikey" ng-minlength="20" ng-maxlength="20" required ng-model="revinfo.Apikey" placeholder="API Key" type="text" />
+
+						</div>
+						
+						<div class="field">
+							<label for="ApiSecret">API Secret</label>
+							<input id="ApiSecret" ng-disabled="IsCodeButtonHide" name="apisecret" ng-maxlength="100" ng-minlength="5" required ng-model="revinfo.Apisecret" placeholder="API Secret" type="text" />
+
+						</div>
+						<div class="field">
+							<label for="RedirectUri">Redirect Uri (Please use below redirect uri while creating api key.)</label>
+							<input id="RedirectUri" ng-disabled="true" name="redirecturi" ng-minlength="5" ng-maxlength="80" required ng-model="revinfo.RedirectUri" placeholder="Redirect Uri" type="text" />
+							
+
+						<button type="submit" ng-show="!IsCodeButtonHide" class="ui blue button">Get Rev Code</button>
+						<br/>
+						<div class="field" ng-show="IsCodeButtonHide">
+							<label>Code</label> {{ code }}	
+						</div>
+						<br/>
+						<input ng-if='revToken.accessToken == undefined' type="button" ng-show="IsCodeButtonHide" class="ui blue button" value="Get Rev Token" ng-click="revOAuthToken()" />
+						<div class="field" ng-show="IsCodeButtonHide" ng-if='revToken.accessToken !== undefined'>
+							<label>Access Token</label> <div style="font-size:small"> {{ revToken.accessToken }} </div>
+							<br/>
+							<label>Refresh Token</label> <div style="font-size:small"> {{ revToken.refreshToken }} </div>
+							<br/>
+							<label>Expiration</label> <div style="font-size:small">  {{ revToken.expiration }} </div>
+							<br/>
+							<label>IssuedBy</label> <div style="font-size:small"> {{ revToken.issuedBy }} </div>	
+					    </div>	
+						<br/>
+						<input ng-if='revToken.accessToken !== undefined' type="button" ng-show="IsCodeButtonHide" class="ui blue button" value="Refresh Page" ng-click="refreshPage()" />			
+						<span ng-show="loading">{{statusValue}}</span>
+					</div>
+				</fieldset>
+			</div>
+		</form>
+
+	</div>
+	<script src="../../Content/semantic/packaged/javascript/semantic.min.js"></script>
+	<script src="../../Content/Scripts/jquery.signalR-2.2.0.js"></script>
+	<script src="../../Content/Scripts/angular.js"></script>
+	<script src="../../Content/Scripts/angular-recaptcha.min.js"></script>
+	<script src="~/signalr/hubs"></script>
+	<script src="../../Content/ViewModel/RevAuthViewM.js"></script>
+	<script src="../../Content/Scripts/SRValidation.js"></script>
+	<script src="../../Content/Scripts/angular-cookies.min.js"></script>
+	<script src="../../Content/Scripts/angular-mocks.js"></script>
+	<script src="../../Content/Scripts/angular-resource.min.js"></script>
+	<script src="../../Content/Scripts/angular-sanitize.min.js"></script>
+</body>
+</html>

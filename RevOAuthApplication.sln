@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RevOAuthApp.Runtime", "RevOAuthApp.Runtime", "{B533C879-A488-4AD5-8A9C-7F58CB7C680C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RevOAuthApp.Common", "RevOAuthApp.Common", "{39712098-DDE5-4C9A-9121-85B4558A859F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RevOAuthApp.Web", "RevOAuthApp.Web", "{FC8846E2-E538-4A92-BF0E-31E572D9D22E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevOAuth2.Runtime", "RevOAuth2.Runtime\RevOAuth2.Runtime.csproj", "{8ABE0625-1528-438D-9B3A-A6E28008C04B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevOAuth2.Web", "RevOAuth2.Web\RevOAuth2.Web.csproj", "{9EEB6114-59F0-4982-B013-9A94A9E1556B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevOAuthApp.Common", "RevOAuthApp.Common\RevOAuthApp.Common.csproj", "{DD61A431-BC44-42FB-BC6B-00458FF97BE1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8ABE0625-1528-438D-9B3A-A6E28008C04B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ABE0625-1528-438D-9B3A-A6E28008C04B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ABE0625-1528-438D-9B3A-A6E28008C04B}.Debug|x64.ActiveCfg = Debug|x64
+		{8ABE0625-1528-438D-9B3A-A6E28008C04B}.Debug|x64.Build.0 = Debug|x64
+		{8ABE0625-1528-438D-9B3A-A6E28008C04B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ABE0625-1528-438D-9B3A-A6E28008C04B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ABE0625-1528-438D-9B3A-A6E28008C04B}.Release|x64.ActiveCfg = Release|x64
+		{8ABE0625-1528-438D-9B3A-A6E28008C04B}.Release|x64.Build.0 = Release|x64
+		{9EEB6114-59F0-4982-B013-9A94A9E1556B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EEB6114-59F0-4982-B013-9A94A9E1556B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EEB6114-59F0-4982-B013-9A94A9E1556B}.Debug|x64.ActiveCfg = Debug|x64
+		{9EEB6114-59F0-4982-B013-9A94A9E1556B}.Debug|x64.Build.0 = Debug|x64
+		{9EEB6114-59F0-4982-B013-9A94A9E1556B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EEB6114-59F0-4982-B013-9A94A9E1556B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EEB6114-59F0-4982-B013-9A94A9E1556B}.Release|x64.ActiveCfg = Release|x64
+		{9EEB6114-59F0-4982-B013-9A94A9E1556B}.Release|x64.Build.0 = Release|x64
+		{DD61A431-BC44-42FB-BC6B-00458FF97BE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD61A431-BC44-42FB-BC6B-00458FF97BE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD61A431-BC44-42FB-BC6B-00458FF97BE1}.Debug|x64.ActiveCfg = Debug|x64
+		{DD61A431-BC44-42FB-BC6B-00458FF97BE1}.Debug|x64.Build.0 = Debug|x64
+		{DD61A431-BC44-42FB-BC6B-00458FF97BE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD61A431-BC44-42FB-BC6B-00458FF97BE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD61A431-BC44-42FB-BC6B-00458FF97BE1}.Release|x64.ActiveCfg = Release|x64
+		{DD61A431-BC44-42FB-BC6B-00458FF97BE1}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8ABE0625-1528-438D-9B3A-A6E28008C04B} = {B533C879-A488-4AD5-8A9C-7F58CB7C680C}
+		{9EEB6114-59F0-4982-B013-9A94A9E1556B} = {FC8846E2-E538-4A92-BF0E-31E572D9D22E}
+		{DD61A431-BC44-42FB-BC6B-00458FF97BE1} = {39712098-DDE5-4C9A-9121-85B4558A859F}
+	EndGlobalSection
+EndGlobal

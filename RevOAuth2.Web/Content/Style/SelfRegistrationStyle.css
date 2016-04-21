@@ -1,0 +1,32 @@
+﻿header {
+    width: 100%;
+    background-color: #fff;
+}
+.header-container {
+    padding-left: 1em;
+}
+.header-container, .main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+.main {
+    margin-bottom: 1em;
+}
+.ui.segment.form-header, .ui.blue.button {
+    background-color: #4B73A1;
+
+}
+body {
+    background-color: rgba(90, 96, 101, 0.25);
+    font-family: Arial, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+fieldset {
+    border: none;
+}
+footer {
+    background-color: transparent;
+
+}

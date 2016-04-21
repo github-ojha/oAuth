@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <div class="container" lang="en" ng-app="adminApp">
+        <h1>Administrator Task</h1>
+        <form name="registration_form">
+            <fieldset>
+                <div class="ui form segment" ng-controller="AdminController">                   
+                    <div class="field">
+                        <label for="logOn">Log On</label>
+                        <button class="ui blue button" ng-click="LogOnCommand()">Log On</button>                        
+                    </div>
+
+                    <div class="field">
+                        <label for="logOff">Log Off</label>    
+                        <button class="ui blue button" ng-click="LogOffCommand()">Log Off</button>                     
+                    </div>               
+                    <span ng-show="loading">{{statusValue}}</span>
+                </div>
+            </fieldset>
+        </form>
+
+    </div>
+    <script src="../../Content/Scripts/jquery-1.6.4.min.js"></script>
+    <script src="../../Content/semantic/packaged/javascript/semantic.min.js"></script>
+    <script src="../../Content/Scripts/angular.min.js"></script>    
+    <script src="../../Content/ViewModel/AdminVM.js"></script>
+    <script src="../../Content/Scripts/jquery.signalR-2.2.0.min.js"></script>
+</body>
+</html>
